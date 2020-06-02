@@ -6,3 +6,4 @@ feature 'Bookmark Manager' do
     expect(page).to have_content 'Welcome to Bookmark Manager!'
   end
 end
+
