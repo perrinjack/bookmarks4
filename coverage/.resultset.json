@@ -1,10 +1,40 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/student/Projects/Bookmark_manager/spec/bookmark_class_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/student/Projects/Bookmark_manager/lib/bookmark.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/student/Projects/Bookmark_manager/spec/features/bookmarks_spec.rb": {
         "lines": [
           1,
           null,
+          1,
+          1,
           1,
           1,
           1,
@@ -27,6 +57,6 @@
         ]
       }
     },
-    "timestamp": 1591105827
+    "timestamp": 1591108922
   }
 }
