@@ -2,7 +2,6 @@ require 'sinatra'
 
 feature "/bookmarks page" do
   scenario "views bookmarks" do
-    clear_table
     add_test_data
     visit '/bookmarks'
     expect(page).to have_content("http://www.google.com")
@@ -10,3 +9,4 @@ feature "/bookmarks page" do
     expect(page).to have_content("http://www.destroyallsoftware.com")
   end
 end
+

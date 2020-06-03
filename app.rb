@@ -7,6 +7,14 @@ class BookmarkManager < Sinatra::Base
     "Welcome to Bookmark Manager!"
   end
 
+  get '/add-bookmark' do
+    erb(:add_bookmark)
+  end
+
+  post '/save-bookmark' do
+    p params
+  end
+
   get '/bookmarks' do
     @bookmarks = Bookmark.all
     erb(:view_bookmarks)
