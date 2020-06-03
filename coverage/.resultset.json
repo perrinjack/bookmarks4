@@ -19,16 +19,6 @@
           null
         ]
       },
-      "/Users/student/Projects/Bookmark_manager/lib/bookmark.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/student/Projects/Bookmark_manager/spec/features/bookmarks_spec.rb": {
         "lines": [
           1,
@@ -57,6 +47,6 @@
         ]
       }
     },
-    "timestamp": 1591108922
+    "timestamp": 1591192202
   }
 }

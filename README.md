@@ -21,3 +21,11 @@ Domain model for first user story:
 2. Create a database: CREATE DATABASE "bookmark_manager";
 3. Connect to the database: \c bookmark_manager;
 4. Create table: run query we have saved in file 01_create_bookmarks_table.sql
+
+### Initial table:
+
+ id |                url                
+----+-----------------------------------
+  1 | http://www.makersacademy.com
+  3 | http://www.google.com
+  2 | http://www.destroyallsoftware.com
