@@ -7,11 +7,8 @@ class Bookmark
     else
       conn = PG.connect( dbname: 'bookmark_manager' )  
     end
-    list = []
-    conn.exec( "SELECT * FROM bookmarks" ) do |result|
-      result.each { |row| list.push(row["url"]) }
-    end
-    list
+    result = conn.exec( "SELECT * FROM bookmarks" )
+    result.map { |bookmark| bookmark["url"] }
   end
 end
 
