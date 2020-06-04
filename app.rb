@@ -1,10 +1,11 @@
+# frozen_string_literal: true
+
 require 'sinatra/base'
 require_relative './lib/bookmark'
 
 class BookmarkManager < Sinatra::Base
-
   get '/' do
-    "Welcome to Bookmark Manager!"
+    'Welcome to Bookmark Manager!'
   end
 
   get '/add-bookmark' do
@@ -21,6 +22,5 @@ class BookmarkManager < Sinatra::Base
     erb(:view_bookmarks)
   end
 
-  run! if app_file == $0
-
+  run! if app_file == $PROGRAM_NAME
 end

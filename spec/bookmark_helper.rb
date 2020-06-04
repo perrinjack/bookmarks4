@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 def clear_table
-  conn = PG.connect( dbname: 'bookmark_manager_test' )
-  conn.exec( "TRUNCATE TABLE bookmarks;" )
+  conn = PG.connect(dbname: 'bookmark_manager_test')
+  conn.exec('TRUNCATE TABLE bookmarks;')
 end
 
 def add_test_data

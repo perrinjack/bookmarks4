@@ -1,28 +1,25 @@
+# frozen_string_literal: true
+
 require 'bookmark'
 require 'bookmark_helper'
 
 describe Bookmark do
-
-  describe ".all" do
+  describe '.all' do
     add_test_data
-    list = Bookmark.all
-    it "reture a list of bookmarks" do
-      # expect(list).to include("http://www.google.com")
-      # expect(list).to include("http://www.makersacademy.com")
-      # expect(list).to include("http://www.destroyallsoftware.com")
-      expect(list).to include("Google")
-      expect(list).to include("Makers")
-      expect(list).to include("Destroy")
+    bookmarks = Bookmark.all
+    it 'return a list instances' do
+      expect(bookmarks.length).to eq 3
+      expect(bookmarks.first.title).to eq 'Google'
+      expect(bookmarks[1]).to be_an_instance_of(Bookmark)
+      expect(bookmarks[1].url).to eq 'http://www.makersacademy.com'
     end
   end
 
-  describe ".create" do
-    it "creates a new bookmark" do
+  describe '.create' do
+    it 'creates a new bookmark' do
       Bookmark.create('test.url', 'title')
       list = Bookmark.all
       expect(list).to include('title')
-
     end
   end
-
 end
