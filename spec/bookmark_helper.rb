@@ -4,7 +4,7 @@ def clear_table
 end
 
 def add_test_data
-  Bookmark.create('http://www.google.com')
-  Bookmark.create('http://www.makersacademy.com')
-  Bookmark.create('http://www.destroyallsoftware.com')
+  Bookmark.create('http://www.google.com', 'Google')
+  Bookmark.create('http://www.makersacademy.com', 'Makers')
+  Bookmark.create('http://www.destroyallsoftware.com', 'Destroy')
 end

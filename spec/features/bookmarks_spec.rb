@@ -4,9 +4,9 @@ feature "/bookmarks page" do
   scenario "views bookmarks" do
     add_test_data
     visit '/bookmarks'
-    expect(page).to have_content("http://www.google.com")
-    expect(page).to have_content("http://www.makersacademy.com")
-    expect(page).to have_content("http://www.destroyallsoftware.com")
+    expect(page).to have_content("Google")
+    expect(page).to have_content("Makers")
+    expect(page).to have_content("Destroy")
   end
 end
 
