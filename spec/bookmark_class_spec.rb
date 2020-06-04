@@ -2,6 +2,7 @@
 
 require 'bookmark'
 require 'bookmark_helper'
+require 'database_helpers'
 
 describe Bookmark do
   describe '.all' do
@@ -18,9 +19,11 @@ describe Bookmark do
   describe '.create' do
     it 'creates a new bookmark' do
       bookmark = Bookmark.create('test.url', 'title')
-      expect(bookmark.first).to be_an_instance_of(Bookmark)
-      expect(bookmark.first.url).to eq('test.url')
-      expect(bookmark.first.title).to eq('title')
+      persisted_data = persisted_data(id: bookmark.id)
+      expect(bookmark).to be_an_instance_of(Bookmark)
+      expect(bookmark.url).to eq('test.url')
+      expect(bookmark.title).to eq('title')
+      expect(bookmark.id).to eq persisted_data['id']
     end
   end
 end
