@@ -17,9 +17,10 @@ describe Bookmark do
 
   describe '.create' do
     it 'creates a new bookmark' do
-      Bookmark.create('test.url', 'title')
-      list = Bookmark.all
-      expect(list).to include('title')
+      bookmark = Bookmark.create('test.url', 'title')
+      expect(bookmark.first).to be_an_instance_of(Bookmark)
+      expect(bookmark.first.url).to eq('test.url')
+      expect(bookmark.first.title).to eq('title')
     end
   end
 end

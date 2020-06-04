@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/PerrinJ/Bookmark_manager/spec/bookmark_class_spec.rb": {
+      "/Users/student/Projects/Bookmark_manager/spec/bookmark_class_spec.rb": {
         "lines": [
           null,
           null,
@@ -25,12 +25,13 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null
         ]
       },
-      "/Users/PerrinJ/Bookmark_manager/spec/features/add_bookmark_spec.rb": {
+      "/Users/student/Projects/Bookmark_manager/spec/features/add_bookmark_spec.rb": {
         "lines": [
           null,
           null,
@@ -47,7 +48,7 @@
           null
         ]
       },
-      "/Users/PerrinJ/Bookmark_manager/spec/features/bookmarks_spec.rb": {
+      "/Users/student/Projects/Bookmark_manager/spec/features/bookmarks_spec.rb": {
         "lines": [
           null,
           null,
@@ -64,7 +65,7 @@
           null
         ]
       },
-      "/Users/PerrinJ/Bookmark_manager/spec/features/index_spec.rb": {
+      "/Users/student/Projects/Bookmark_manager/spec/features/index_spec.rb": {
         "lines": [
           null,
           null,
@@ -79,6 +80,6 @@
         ]
       }
     },
-    "timestamp": 1591285977
+    "timestamp": 1591288274
   }
 }
