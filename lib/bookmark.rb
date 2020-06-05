@@ -32,4 +32,9 @@ class Bookmark
     result.map { |bookmark| Bookmark.new(bookmark['id'], bookmark['url'], bookmark['title']) }.first
     # Bookmark.new(result[:url], result[2])
   end
+
+  def self.delete(id)
+    conn = PG.connect(dbname: 'bookmark_manager_test')
+    result = conn.exec("DELETE FROM bookmarks WHERE id = #{id} ")
+  end
 end

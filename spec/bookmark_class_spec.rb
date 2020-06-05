@@ -26,4 +26,14 @@ describe Bookmark do
       expect(bookmark.id).to eq persisted_data['id']
     end
   end
+
+  describe '.delete' do
+    it 'deletes a bookmark' do
+      add_test_data
+      bookmark = Bookmark.create('test.url', 'title')
+      Bookmark.delete(bookmark.id)
+      expect(Bookmark.all.length).to eq 3
+
+    end
+  end
 end

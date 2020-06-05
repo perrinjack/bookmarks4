@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Projects/Bookmark_manager/spec/bookmark_class_spec.rb": {
+      "/Users/PerrinJ/Bookmark_manager/spec/bookmark_class_spec.rb": {
         "lines": [
           null,
           null,
@@ -31,10 +31,20 @@
           1,
           null,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
           null
         ]
       },
-      "/Users/student/Projects/Bookmark_manager/spec/database_helpers.rb": {
+      "/Users/PerrinJ/Bookmark_manager/spec/database_helpers.rb": {
         "lines": [
           1,
           null,
@@ -45,24 +55,7 @@
           null
         ]
       },
-      "/Users/student/Projects/Bookmark_manager/spec/features/add_bookmark_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/student/Projects/Bookmark_manager/spec/features/bookmarks_spec.rb": {
+      "/Users/PerrinJ/Bookmark_manager/spec/features/add_bookmark_spec.rb": {
         "lines": [
           null,
           null,
@@ -79,7 +72,24 @@
           null
         ]
       },
-      "/Users/student/Projects/Bookmark_manager/spec/features/index_spec.rb": {
+      "/Users/PerrinJ/Bookmark_manager/spec/features/bookmarks_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/PerrinJ/Bookmark_manager/spec/features/index_spec.rb": {
         "lines": [
           null,
           null,
@@ -94,6 +104,6 @@
         ]
       }
     },
-    "timestamp": 1591289346
+    "timestamp": 1591364979
   }
 }
